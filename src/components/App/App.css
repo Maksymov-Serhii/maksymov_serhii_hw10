@@ -7,3 +7,41 @@
   flex-direction: column;
   align-items: center;
 }
+
+.button {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.button:hover {
+  background-color: #F082AC;
+}
+
+.error-page {
+  width: 1170px;
+  min-height: 300px;
+  background-image: url('/src/assets/images/bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: initial;
+  text-align: center;
+  border-radius: 15px;
+}
