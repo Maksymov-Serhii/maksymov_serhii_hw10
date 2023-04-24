@@ -1,6 +1,5 @@
 import React from "react";
 import './Products.css'
-import Menu from "../Menu/Menu";
 import { NavLink } from "react-router-dom";
 
 const Products = () => {

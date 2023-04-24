@@ -1,6 +1,5 @@
 import React from "react";
 import './MainPage.css'
-import Menu from "../Menu/Menu";
 import { useNavigate } from "react-router-dom";
 
 const MainPage = () => {

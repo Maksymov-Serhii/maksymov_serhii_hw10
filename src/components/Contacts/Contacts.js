@@ -3,7 +3,6 @@ import './Contacts.css';
 import locationIcon from '../../assets/icons/location.svg';
 import phoneIcon from '../../assets/icons/phone.svg';
 import mailIcon from '../../assets/icons/mail.svg';
-import Menu from "../Menu/Menu";
 
 const Contacts = () => {
   return (

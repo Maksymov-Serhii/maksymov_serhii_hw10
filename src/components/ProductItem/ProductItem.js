@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import './ProductItem.css'
 import { useNavigate, useParams } from "react-router-dom";
-import Menu from "../Menu/Menu";
 import car1 from "../../assets/images/car-1.jpg"
 import car2 from "../../assets/images/car-2.jpg"
 import car3 from "../../assets/images/car-3.jpg"
