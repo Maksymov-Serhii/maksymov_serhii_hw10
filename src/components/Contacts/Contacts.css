@@ -1,0 +1,34 @@
+.contacts-page {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/images/contacts-bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position:initial;
+  text-align: center;
+}
+
+.contact-list {
+  margin-top: 100px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.li-wrapper {
+  width: 500px;
+  display: flex;
+}
+
+.li-wrapper img {
+  margin-right: 10px;
+  width: 40px;
+}
+
+.li-wrapper p {
+  color:brown;
+  font-weight: bold;
+  user-select: none;
+  -webkit-user-select: none;
+}

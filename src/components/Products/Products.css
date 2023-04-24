@@ -1,0 +1,25 @@
+.products-page {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/images/products-bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: initial;
+  text-align: center;
+}
+
+.products-list {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-list a.active {
+  color: brown;
+}
+
+.products-list a:hover {
+  text-decoration: underline;
+}

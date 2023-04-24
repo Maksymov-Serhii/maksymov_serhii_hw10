@@ -1,0 +1,25 @@
+.product-page {
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/images/products-bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: initial;
+  text-align: center;
+}
+
+.product-page img {
+  width: 1050px;
+  height: 590px;
+}
+
+.product-navigation {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-navigation h4 {
+  margin: 0 15px;
+}
