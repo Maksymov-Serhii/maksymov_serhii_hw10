@@ -1,0 +1,9 @@
+.App {
+  background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
