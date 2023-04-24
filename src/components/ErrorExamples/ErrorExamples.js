@@ -24,7 +24,7 @@ const ErrorExamples = () => {
         <button onClick={handleError} className="button">Create error in parent component</button>
       </p>
 
-      <div>
+      <div className="child-block">
         {showErrorExamplesChild && <ErrorExamplesChild />}
         <p>
           <button onClick={handleHideErrorExamplesChild} className="button">Hide Error Examples Child</button>
