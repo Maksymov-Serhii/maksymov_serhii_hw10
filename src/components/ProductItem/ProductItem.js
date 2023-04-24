@@ -11,6 +11,7 @@ import car5 from "../../assets/images/car-5.jpg"
 const ProductItem = () => {
 
   const [isBuyError, setIsBuyError] = useState(false);
+  const [showAllProductsError, setShowAllProductsError] = useState(false);
 
   const { productId } = useParams();
   const productImages = {
@@ -43,6 +44,14 @@ const ProductItem = () => {
     }
   }
 
+  if (showAllProductsError) {
+    return new Error("You've caught an error");
+  }
+
+  const handleAllProducts = () => {
+    setShowAllProductsError(true);
+  }
+
   return (
     <div className="product-page">
       <Menu />
@@ -51,11 +60,15 @@ const ProductItem = () => {
         <h4>Товар {productId}</h4>
         <button className="button" onClick={handleNextProduct}>Наступний товар</button>
       </div>
+      <div className="product-navigation">
+        <button className="button" onClick={handleAllProducts}><b>Показати всі товари</b></button>
+        <span>- Експериментальна функція! Не натискати!</span>
+      </div>
       <img src={productImages[productId]} alt={productId}></img>
       
       {!isBuyError && <p>
         <button className="button" onClick={handleMethodError}>
-          <b>Купити!</b> (Кнопка з помилкою - не нажимати!)
+          <b>Купити!</b> (Кнопка з помилкою - не натискати!)
         </button>
       </p>}
       {isBuyError && <p>Something went wrong</p>}

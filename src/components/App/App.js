@@ -27,12 +27,13 @@ function App() {
 
       <div className='shop'>
         <h3>Internet Shop</h3>
+        <p>WARNING! This App has some errors in ProductItems Component</p>
           <BrowserRouter>
           <Routes>
             <Route path='/' element={<MainPage />} />
             <Route path='/contacts' element={<ErrorBoundary><Contacts /></ErrorBoundary>} />
-            <Route path='/products' element={<ErrorBoundary><Products /></ErrorBoundary>} />
-            <Route path='/products/:productId' element={<ProductItem />} />
+            <Route path='/products' element={<Products />} />
+            <Route path='/products/:productId' element={<ErrorBoundary><ProductItem /></ErrorBoundary>} />
             {!isUserOver18 && (
               <Route
                 path="/private"
