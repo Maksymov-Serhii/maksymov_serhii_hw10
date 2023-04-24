@@ -54,7 +54,6 @@ const ProductItem = () => {
 
   return (
     <div className="product-page">
-      <Menu />
       <div className="product-navigation">
         <button className="button" onClick={handlePreviousProduct}>Попередній товар</button>
         <h4>Товар {productId}</h4>

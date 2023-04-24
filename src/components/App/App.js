@@ -9,6 +9,7 @@ import Products from '../Products/Products';
 import Contacts from '../Contacts/Contacts';
 import MainPage from '../MainPage/MainPage';
 import ProductItem from '../ProductItem/ProductItem';
+import Menu from '../Menu/Menu';
 
 function App() {
 
@@ -28,10 +29,11 @@ function App() {
       <div className='shop'>
         <h3>Internet Shop</h3>
         <p>WARNING! This App has some errors in ProductItems Component</p>
-          <BrowserRouter>
+        <BrowserRouter>
+          <Menu />
           <Routes>
             <Route path='/' element={<MainPage />} />
-            <Route path='/contacts' element={<ErrorBoundary><Contacts /></ErrorBoundary>} />
+            <Route path='/contacts' element={<Contacts />} />
             <Route path='/products' element={<Products />} />
             <Route path='/products/:productId' element={<ErrorBoundary><ProductItem /></ErrorBoundary>} />
             {!isUserOver18 && (

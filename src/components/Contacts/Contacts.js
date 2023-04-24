@@ -8,7 +8,6 @@ import Menu from "../Menu/Menu";
 const Contacts = () => {
   return (
     <div className="contacts-page">
-      <Menu />
       <ul className="contact-list">
         <li>
           <div className="li-wrapper">

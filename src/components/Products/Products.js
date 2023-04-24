@@ -8,7 +8,6 @@ const Products = () => {
 
   return (  
     <div className="products-page">
-      <Menu />
       <h2>Купуй у нас за найкращими цінами</h2>
       <ul className="products-list">
         {productsIds.map(productId => {

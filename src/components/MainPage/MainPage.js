@@ -16,7 +16,6 @@ const MainPage = () => {
 
   return (
     <div className="main-page">
-      <Menu />
       <p>
         <button className="button" onClick={handleStartShopping}>Розпочати покупки</button>
       </p>
