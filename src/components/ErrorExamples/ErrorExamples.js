@@ -21,7 +21,7 @@ const ErrorExamples = () => {
     <div className="error-page">
       <h3>Error Examples</h3>
       <p>
-        <button onClick={handleError} className="button">Create an Error</button>
+        <button onClick={handleError} className="button">Create error in parent component</button>
       </p>
 
       <div>
