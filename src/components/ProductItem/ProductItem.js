@@ -60,7 +60,7 @@ const ProductItem = () => {
       </div>
       <div className="product-navigation">
         <button className="button" onClick={handleAllProducts}><b>Показати всі товари</b></button>
-        <span>- Експериментальна функція! Не натискати!</span>
+        <span>- Не натискати! Функція містить помилки!</span>
       </div>
       <img src={productImages[productId]} alt={productId}></img>
       
